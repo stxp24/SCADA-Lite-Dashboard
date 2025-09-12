@@ -1,0 +1,27 @@
+A lightweight SCADA (Supervisory Control and Data Acquisition) system written in Java.  
+It simulates plant data (temperature, pressure, motor control) and provides monitoring + control features.
+
+## Features
+- **Phase 1 (CLI Prototype)**
+  - Real-time sensor simulation (temperature & pressure).
+  - Motor ON/OFF control (affects temperature).
+  - Periodic updates printed to console.
+  - Pause/resume functionality.
+  - Alarm messages for high temperature or pressure.
+  - Trend logging (history of values).
+
+- **Phase 2 (Planned)**
+  - REST API (readings, control, trends).
+  - Client dashboard (JavaFX or web-based).
+  - Alarms exposed via API.
+  - Data persistence (SQLite).
+
+- **Phase 3 (Stretch Goals)**
+  - WebSocket API for real-time streaming.
+  - Authentication & role-based access.
+  - Graphical HMI with charts, gauges, and alarms.
+
+## Architecture
+- **Data Layer**: Simulated sensors & actuators.
+- **Control Layer**: API for reading/writing values.
+- **Presentation Layer**: CLI (Phase 1), GUI/Web Dashboard (future phases).
